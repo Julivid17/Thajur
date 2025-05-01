@@ -1,4 +1,5 @@
 // Simple JavaScript for enhanced interactivity
+
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -22,4 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
             heroContent.style.opacity = '1';
         }, 200);
     }, 300);
+    
 });
+// <script>
+  function scrollGallery(direction) {
+    const panel = document.getElementById('photoPanel');
+    const scrollAmount = 300; // píxeles por clic
+    panel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+//</script>

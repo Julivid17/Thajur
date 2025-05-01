@@ -36,7 +36,50 @@ header {
     background-color: var(--color-light);
     border-bottom: 1px solid var(--color-tertiary);
 }
-
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .photo-panel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+    max-width: 90vw;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .photo-panel img {
+    height: 400px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .scroll-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .scroll-btn:hover {
+    background-color: #555;
+  }
+  
 nav {
     display: flex;
     justify-content: space-between;
