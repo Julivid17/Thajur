@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito de Compras - Thajur</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html" class="logo-small">Thajur</a>
+        <button class="hamburger">&#9776;</button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="carrito.html" class="carrito">Carrito</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container carrito-page">
+    <h1>Tu carrito de compras</h1>
+
+    <div class="carrito-items">
+      <!-- Producto ejemplo -->
+      <div class="carrito-item">
+        <img src="img/ejemplo-vestido.jpg" alt="Producto" />
+        <div class="item-info">
+          <h3>Vestido de noche</h3>
+          <p>Talla: M</p>
+          <p>Precio: $200.000</p>
+        </div>
+        <button class="eliminar-item"><i class="fas fa-trash-alt"></i></button>
+      </div>
+
+      <!-- Más productos irán aquí dinámicamente -->
+    </div>
+
+    <div class="carrito-total">
+      <h2>Total: <span>$200.000</span></h2>
+      <button class="btn-comprar">Finalizar compra</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>THAJUR ALTA MODA © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
