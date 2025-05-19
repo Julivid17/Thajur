@@ -1,8 +1,9 @@
+/* Reset and General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 
 * {
-    margin: 0.2em;
-    padding: 0.2em;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -35,194 +36,7 @@ header {
     background-color: var(--color-light);
     border-bottom: 1px solid var(--color-tertiary);
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
 
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: var(--color-primary);
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: var(--color-light);
-        padding: 10px 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.4s ease, opacity 0.3s ease;
-        z-index: 1000;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex;
-        max-height: 500px;
-        opacity: 1;
-    }
-
-    .nav-links a {
-        padding: 10px 0;
-        width: 100%;
-        text-align: right;
-    }
-}
-
-/* Estilo base: oculta en móviles */
-.nav-links {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1000;
-}
-
-/* Muestra cuando se activa el menú (en móviles) */
-.nav-links.active {
-  display: flex;
-}
-
-/* PANTALLAS GRANDES: mostrar el menú siempre y en fila */
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    background-color: transparent;
-    width: auto;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
-
-
-
-
-.gallery-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .photo-panel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 10px;
-    padding: 10px;
-    max-width: 90vw;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .photo-panel img {
-    height: 400px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .scroll-btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .scroll-btn:hover {
-    background-color: #555;
-  }
-.gallery-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .photo-panel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 10px;
-    padding: 10px;
-    max-width: 90vw;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .photo-panel img {
-    height: 400px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .scroll-btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .scroll-btn:hover {
-    background-color: #555;
-  }
-    
 nav {
     display: flex;
     justify-content: space-between;
@@ -596,5 +410,4 @@ footer {
     .footer-logo h2 {
         font-size: 36px;
     }
-
 }
