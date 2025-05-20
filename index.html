@@ -14,29 +14,38 @@
 </head>
  <body>
     <header>
-        <nav>
-            <div class="nav-left">
-              <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
-              <div class="logo-small">Diseños a tu medida</div>
-            </div>
-          <div class="nav-links">
-  <a href="#inicio">Inicio</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#contacto">Contacto</a>
-
-
-</div>
-
-          </nav>
-
-</header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                  <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+                  <div class="logo-small"></div>
+                </div>
+              
+                <div class="nav-links">
+                  <a href="#inicio">Inicio</a>
+                  <a href="#nosotros">Nosotros</a>
+                  <a href="#servicios">Servicios</a>
+                  <a href="#contacto">Contacto</a>   
+                     <div class="social-icons-mobile">
+                     <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573213501470" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+         </div>
+                
+                     
+              </nav>
+              
+              
+              
+    </header>
 
     <!-- Sección hero/principal -->
     <section id="inicio" class="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
             <div class="main-logo">
-                <img src="Logo/LOGO.svg" alt=""width="600" height=auto> 
+                <img src="Logo/LOGO.svg" alt=""width="100%" height="400"> 
             </div>
             <p class="subtitle">Los momentos especiales de la vida diseñados a tu medida.</p>
             <a href="https://www.instagram.com/marthajuyarboutique?igsh=Nzg3MGt1dnRsbHh4" target="_blank" rel="noopener noreferrer" class="instagram-btn">
@@ -49,10 +58,10 @@
         <button class="scroll-btn left" onclick="scrollGallery(-1)">←</button>
       
         <div class="photo-panel" id="photoPanel">
-          <img src="img/Vestido verde.png" alt="Foto 1">
+          <img src="img/gray-wedding-arrangement-with-champagne-glasses.jpg" alt="Foto 1">
           <img src="img/two-young-beautiful-brunette-girls-nice-trendy-summer-shiny-dress.jpg" alt="Foto 2">
           <img src="img/young-beautiful-smiling-brunette-female-trendy-evening-silver-dress-sexy-carefree-woman-posing-near-white-wall-studio-circle-lightfashionable-model-with-bright-makeup-high-fashion.jpg" alt="Foto 3">
-          <img src="img/vestido rosa.jpg" alt="Foto 4">
+          <img src="img/flat-lay-frame-with-white-flowers-background.jpg" alt="Foto 4">
           <!-- Más imágenes -->
         </div>
       
@@ -87,8 +96,8 @@
     </section>
 
     <!-- Sección de vestidos -->
-    <section id="vestidos" class="vestidos container">
-        <!-- Esta se cción puede ser añadida según necesidades específicas -->
+    <section id="contacto" class="vestidos container">
+        <!-- Esta sección puede ser añadida según necesidades específicas -->
     </section>
 
     <!-- Footer/Pie de página -->
@@ -123,5 +132,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
+
  </body>
 </html>
